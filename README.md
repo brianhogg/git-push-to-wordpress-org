@@ -10,15 +10,24 @@ This works by setting up a git bare repository on your local machine which can b
 
 You need command line git and svn on your local machine.  These instructions are for MacOSX, if you run windows and can help with those instructions let me know.
 
-`cd <your wp.org svn repo folder>
+### Step 1: Set up the local git repo
+
+```
+cd <your wp.org svn repo folder>
 mkdir git-remote
 cd git-remote
-git init --bare`
+git init --bare
+```
 
 then copy the `update` and `post-receive` files to the hooks/ folder (in git-remote)
 
-`chmod a+x update
-chmod a+x post-receive`
+```
+chmod a+x update
+chmod a+x post-receive
+```
+
+### Step 2: 
+
 
 ## Pushing a new version
 
